@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
 }
 
 :root {
@@ -15,45 +15,36 @@
 }
 
 body {
-    color: #212121;
     font-family: 'Roboto', sans-serif;
+    color: #212121;
 }
 
 /* header */
 
 .header-container {
-    width: 1600px;
     padding-bottom: 25px;
-    background-color: var(--white-color);
+
     border-bottom: 1px solid #ececec;
+    background-color: var(--white-color);
 }
 
 .container {
     width: 1200px;
-    margin: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
 }
 
-.header-justify {
-    display: flex;
-    justify-content: space-between;
-}
-
-.header-container li,
-.header-justify ul,
-nav,
-nav a {
+.header-container ul,
+.header-container nav {
     display: inline-flex;
     align-items: center;
 }
 
-nav li:nth-child(n + 2) {
+.header-container nav li:nth-child(n + 2) {
     margin-left: 46px;
 }
 
 .logo {
-    width: 145px;
-
     margin-top: 24px;
 
     text-decoration: none;
@@ -62,8 +53,10 @@ nav li:nth-child(n + 2) {
     font-size: 26px;
     line-height: 1.1;
     letter-spacing: 0.03em;
+
     color: var(--hover-color);
 }
+
 .logo-first-color {
     color: var(--black-color);
 }
@@ -73,8 +66,9 @@ nav li:nth-child(n + 2) {
 }
 
 .top-contacts {
-    margin-top: 32px;
     padding-right: 12px;
+    margin-top: 32px;
+    margin-left: 371px;
 
     list-style: none;
 }
@@ -85,6 +79,7 @@ nav li:nth-child(n + 2) {
     font-size: 14px;
     line-height: 1.2px;
     letter-spacing: 0.02em;
+
     color: var(--white-grey-text);
 }
 
@@ -93,16 +88,19 @@ nav li:nth-child(n + 2) {
 }
 
 .top-links {
-    margin-top: 32px;
     padding-left: 93px;
+    margin-top: 32px;
+
     list-style: none;
 }
+
 .top-links a {
-    color: var(--text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.2;
+
+    color: var(--text-color);
 }
 
 .top-links a:hover,
@@ -118,29 +116,23 @@ nav li:nth-child(n + 2) {
 
 /* <main> */
 
-.negative-margin {
-    margin: -94px 0;
-}
-
 .negative-margin-top {
     margin-top: -94px;
 }
 
-section {
+.section {
     padding: 94px 0;
 }
 
 .slogan {
-    width: 1600px;
-
     list-style: none;
+
     background-color: var(--dark-grey-background);
 }
 
 .slogan h1 {
-    width: 696px;
-    margin: 0 auto;
     padding-top: 200px;
+    margin: 0 251px;
     margin-bottom: 40px;
 
     font-weight: 900;
@@ -151,6 +143,7 @@ section {
     text-transform: uppercase;
     color: var(--white-color);
 }
+
 .slogan-link {
     width: 200px;
     padding: 10px 42px;
@@ -160,24 +153,19 @@ section {
     font-weight: 700;
     font-size: 16px;
     line-height: 2;
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: var(--white-color);
     background-color: var(--hover-color);
     border: none;
-    outline: none;
-}
-
-.align-left {
-    margin-left: 0px;
-    width: 1600px;
 }
 
 .articles {
-    list-style: none;
-    background-color: var(--white-color);
     display: inline-flex;
     justify-content: space-between;
+    list-style: none;
+    background-color: var(--white-color);
 }
 
 .articles li:nth-child(n + 2) {
@@ -193,8 +181,6 @@ section {
 }
 
 .articles p {
-    width: 270px;
-
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
@@ -213,9 +199,9 @@ section {
 
 .services-pictures {
     margin-top: 50px;
-    list-style: none;
     display: inline-flex;
     justify-content: space-between;
+    list-style: none;
 }
 
 .services-pictures li:nth-child(n + 2) {
@@ -223,7 +209,6 @@ section {
 }
 
 .team-presentation {
-    width: 1600px;
     background-color: var(--team-presentation);
 }
 
@@ -235,19 +220,22 @@ section {
     line-height: 1.2;
     text-align: center;
     letter-spacing: 0.03em;
+
     color: var(--text-color);
 }
 
 .team-members {
     margin-top: 50px;
-    padding-bottom: 94px;
-    list-style: none;
+
     display: flex;
     justify-content: space-between;
+
+    list-style: none;
 }
 
 .team-members li {
     display: inline-flex;
+
     background-color: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -260,33 +248,36 @@ section {
 
 .team-members figcaption {
     padding-bottom: 30px;
-    justify-content: center;
+
     display: flex;
+    justify-content: center;
 }
 
 .member-name {
     position: absolute;
     margin-top: 30px;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
 }
 
 .member-description {
     margin-top: 59px;
-    color: var(--white-grey-text);
+
+    text-align: center;
+
     font-size: 16px;
     line-height: 1.2;
-    text-align: center;
     letter-spacing: 0.03em;
+
+    color: var(--white-grey-text);
 }
 
 /* footer */
 
 .bottom-links {
-    width: 1600px;
     background-color: var(--dark-grey-background);
 }
 
@@ -296,26 +287,31 @@ footer a,
 }
 
 .footer-logo {
-    margin: 0px;
-    display: block;
     padding-top: 36px;
+    margin: 0px;
+
+    display: block;
 }
 
 .business-address {
-    margin-top: 20px;
     padding-bottom: 60px;
+    margin-top: 20px;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
-    color: var(--white-color);
     font-style: normal;
+
+    color: var(--white-color);
 }
 
 .business-address a {
     margin-top: 9px;
+
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;
+
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -337,19 +333,20 @@ footer a,
 }
 
 .portfolio-filters button {
-    width: 121px;
     padding: 6px 22px;
 
-    background-color: var(--team-presentation);
+    width: 121px;
+    text-align: center;
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
-    text-align: center;
     letter-spacing: 0.03em;
     font-family: 'Roboto';
+
     border-radius: 4px;
-    outline: none;
     border: none;
+    background-color: var(--team-presentation);
 }
 
 .portfolio-filters button:hover,
@@ -360,11 +357,12 @@ footer a,
 }
 
 .portfolio {
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
+
+    list-style: none;
 }
 
 .portfolio figure {
@@ -388,7 +386,8 @@ footer a,
 }
 
 .work-title {
-    padding-top: 20px;
+    padding: 20px 24px 0px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -396,8 +395,9 @@ footer a,
 }
 
 .work-type {
-    justify-content: flex-start;
+    padding: 0 24px;
     margin-top: 4px;
+
     font-size: 16px;
     line-height: 1.9;
     letter-spacing: 0.03em;
